@@ -1,0 +1,19 @@
+{
+  "name": "api-rest-practico",
+  "version": "1.0.0",
+  "description": "Curso Práctico de Consumo de API REST con JavaScript",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oscardokis/API-REST-practico.git"
+  },
+  "author": "DanielGonzalez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oscardokis/API-REST-practico/issues"
+  },
+  "homepage": "https://github.com/oscardokis/API-REST-practico#readme"
+}
