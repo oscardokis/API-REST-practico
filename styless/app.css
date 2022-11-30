@@ -1,3 +1,124 @@
-body{
-  background-color: aqua;
+:root{
+  --subtitulos-h2: #999;
+  --white:#fff;
+  --red-bright:#e50914;
+  --brackground-color:#141414;
+  --font-weight-subtitle: 700;
+  --font-weight-text:400;
 }
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html{
+  font-family: 'Roboto', sans-serif;
+  font-size: 62.5%;
+  background-color: var(--brackground-color);
+}
+.none{
+  display: none;
+}
+.header-container{
+  display: flex;
+  position: relative;
+  padding-top: 8px;
+  height: 50px;
+}
+.header-container .header-burger{
+  position: absolute;
+  left: calc(5px + 1%);
+  padding: 5px;
+  padding-left: 10px;
+}
+.header-container .header-burger>img{
+  width: 24px;
+}
+.header-container .header-logo{
+  position: absolute;
+  padding: 7px;
+  left: calc(50% - 100px);
+}
+.header-container .header-logo>img{
+  width: 84px;
+}
+.header-container .header-search{
+  position: absolute;
+  padding: 5px;
+  left: calc(100% - 150px);
+  display: flex;
+
+}
+.header-container .header-search>input{
+  text-decoration: none;
+  background-color: var(--brackground-color);
+  border: 1px solid var(--white);
+  padding: 4px 8px;
+  width: 110px;
+  height: 28px;
+  color: var(--white);
+  }
+.header-container .header-search>button{
+    height: 28px;
+    width: 28px;
+    background-color: transparent;
+    text-decoration: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.header-container .header-search>button>img{
+    width: 20px;
+    object-fit: contain;
+  }
+.trendingPreview-css{
+  position: relative;
+}
+
+.trendingPreview-movieList{
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 35%;
+  gap: 2px;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: inline mandatory;
+}
+.movie-container{
+  padding: 1px;
+  scroll-snap-align: start;
+  text-align:center;
+  
+}
+.movie-container>img{
+  inline-size: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  border-radius: 5%;
+}
+
+/* Categories Section */
+
+.categoriesPreviewSectionClass{
+  position: relative;
+}
+
+.categoriesPreview-list{
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 35%;
+  gap: 2px;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: inline mandatory;
+}
+.category-container{
+  padding: 1px;
+  scroll-snap-align: start;
+  text-align:center;
+  
+}
+
+
+

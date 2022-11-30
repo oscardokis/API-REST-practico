@@ -4,13 +4,54 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
+
   <title>DaniMovies</title>
   <link rel="stylesheet" href="./styless/app.css">
 </head>
 <body>
-  <h1>Dani Movies</h1>
+  <header id="header" class="header-container">
+    <div class="header-burger">
+      <img src="./assets/menu-burger.png" alt="">
+    </div>
+    <div class="header-logo"><img src="./assets/logo.png" alt=""></div>
+    <form action="" class="header-search">
+      <input type="text" placeholder="Buscar">
+      <button><img src="./assets/lupa.png" alt=""></button>
+    </form>
+  </header>
+  <section id="trendingPreview" class="trendingPreview-css">
+    <div class="trendingPreview-header">
+      <h2 class="trendingPreview-title">Tendencias</h2>
+      <button class="trendingPreview-button"></button>
+    </div>
 
+    <article class="trendingPreview-movieList">
+<!--       <div class="movie-container">
+        <img src="" class="movie-img" alt="Nombre de la pelicula">
+      </div> -->
+    </article>
+
+  </section>
+  <section id="categoriesPreview" class="categoriesPreviewSectionClass">
+    <article class="categoriesPreview-list">
+      <div class="category-container">
+        <h3 id="id28" class="category-title">Romance</h3>
+      </div>
+    </article>
+  </section>
+  <section id="genericList">
+
+  </section>
+  <section id="movieDetail">
+
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
   <script src="./src/secrets.js"></script>
   <script src="./src/main.js"></script>
+  <script src="./src/navigation.js"></script>
 </body>
 </html>
