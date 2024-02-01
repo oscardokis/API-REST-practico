@@ -1,0 +1,44 @@
+
+.movieDetailMainImagenContainer{
+  display: block;
+  position: relative;
+  height: 700px;
+}
+.movieDetailMainImagenContainer>img{
+  opacity: 85%;
+  object-fit: cover;  
+  height: 700px;
+  
+}
+
+.movieDetailContainerTitleScoreDescription{
+  align-items: center;
+  position: absolute;
+  height: 100%;
+  top: 0; 
+  left: 0; 
+  color: white;
+  padding: 10px 40px;
+}
+.movieDetailContainerTitleScoreDescription>h2{
+  justify-self: start;
+  font-size: 3rem;
+  color: white;
+  font-weight: 700;
+  line-height: 3rem;
+}
+.movieDetailContainerTitleScoreDescription>span{
+  font-size: 3rem;
+  font-weight: 700;
+  font-style: inherit;
+}
+.movieDetailContainerTitleScoreDescription>p{
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+}
+.categories-list{
+  color: white;
+  font-size: 1.5rem;
+  row-gap: 30px;
+  cursor: pointer;
+}

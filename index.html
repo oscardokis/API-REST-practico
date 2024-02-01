@@ -5,52 +5,145 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link rel="stylesheet" href="./styless/app.css">
+  <link rel="stylesheet" href="./styless/tablet.css" media="(min-width: 600px)">
+  <link rel="stylesheet" href="./styless/desktop.css" media="(min-width:1000px)">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
 
   <title>DaniMovies</title>
-  <link rel="stylesheet" href="./styless/app.css">
+  
 </head>
 <body>
+
+  <!-- header -->
   <header id="header" class="header-container">
+    <div class="header-arrow">
+      <img src="./assets/delete-2-24.png" ></img>
+    </div>
+    <h1 class="header-title header-title--categoryView inactive"></h1>
     <div class="header-burger">
       <img src="./assets/menu-burger.png" alt="">
     </div>
     <div class="header-logo"><img src="./assets/logo.png" alt=""></div>
-    <form action="" class="header-search">
+    <form action="" id="searchForm" class="header-search">
       <input type="text" placeholder="Buscar">
-      <button><img src="./assets/lupa.png" alt=""></button>
+      <button id="searchBtn"><img src="./assets/lupa.png" alt=""></button>
     </form>
   </header>
-  <section id="trendingPreview" class="trendingPreview-css">
+
+  <!-- trending Preview -->
+  <section id="trendingPreview" class="trendingPreview-css inactive">
     <div class="trendingPreview-header">
       <h2 class="trendingPreview-title">Tendencias</h2>
-      <button class="trendingPreview-button"></button>
+      <button class="trendingPreview-button btnVerMas">Ver más</button>
     </div>
 
-    <article class="trendingPreview-movieList">
-<!--       <div class="movie-container">
-        <img src="" class="movie-img" alt="Nombre de la pelicula">
-      </div> -->
+    <article class="trendingPreview-movieList mediaScroller">
+      <div class="movie-container movie-container--loading"></div>
+      <div class="movie-container movie-container--loading"></div>
+      <div class="movie-container">
+<!--         <img src="" class="movie-img" alt="Nombre de la pelicula"> -->
+      </div>
     </article>
 
   </section>
-  <section id="categoriesPreview" class="categoriesPreviewSectionClass">
+
+  <!-- MOVIES ACCION -->
+
+  <section id="moviesDrama" class="">
+    <div class="moviesDrama-header">
+      <h2 class="moviesDrama-title">Drama</h2>
+      <button class="moviesDrama-button btnVerMas">Ver más</button>
+    </div>
+
+    <article class="MoviesDramaList mediaScroller">
+
+        <img src="" class="movieDrama-img" alt="Nombre de la pelicula">
+      </div>
+    </article>
+
+  </section>
+
+  <!-- categories Preview -->
+  <section id="categoriesPreview" class="categoriesPreviewSectionClass inactive">
+    <div class="categoriesPreview-header">
+      <h2 class="categoriesPreview-title">Categorias</h2>
+    </div>
     <article class="categoriesPreview-list">
-      <div class="category-container">
-        <h3 id="id28" class="category-title">Romance</h3>
+      <div class="category-container category-container--loading">
+<!--         <h3 id="id28" class="category-title">Romance</h3> -->
+      </div>
+      <div class="category-containery category-container--loading"></div>
+      <div class="category-containery category-container--loading"></div>
+    </article>
+  </section>
+
+  <!-- liked section -->
+  <section id="liked" class="liked-container">
+    <div class="liked-header">
+      <h2 class="liked-title">Peliculas Favoritas</h2>
+    </div>
+
+    <article class="liked-movieList">
+      <div class="movie-container">
       </div>
     </article>
   </section>
-  <section id="genericList">
+
+  <!-- generic List-->
+  <section id="genericList" class="inactive genericList-container">
+    <div class="movie-container movie-container--loading">
+    </div>
+    <div class="movie-container movie-container--loading">
+    </div>
+    <div class="movie-container movie-container--loading">
+    </div>
 
   </section>
-  <section id="movieDetail">
 
+  <!-- movie Detail-->
+  <section id="movieDetail" class="movieDetail-container">
+<!--     <div class="movieDetailImgtTittleContainer"> -->
+      <div class="movieDetailMainImagenContainer inactive">
+        <img src="" class="movieDetailImg" alt="">
+        <div class="movieDetailContainerTitleScoreDescription">
+          <h2 class="movieDetail-title">Deadpool</h2>
+          <span class="movieDetail-score">&#9734 7.6</span>
+          <p class="movieDetail-description"> Wisecracking mercenary Deadpool battles the evil and powerful Cable and other bad guys to save a boy's life</p>
+          <article class="categories-list">
+            <div class="category-container">
+              <h3 class="category-title">Romance</h3>
+            </div>
+          </article>
+        </div>
+      </div>
+
+<!--     </div> -->
+
+    <article class="relatedMovies-container">
+      <h2 class="relatedMovies-title">Películas similares
+      </h2>
+      <div class="relatedMovies-scrollContainer mediaScroller">
+        <div class="movie-container">
+          <img class="movie-img" alt="Nombre de la película">
+        </div>
+        <div class="movie-container">
+          <img class="movie-img" alt="Nombre de la película">
+        </div>
+        <div class="movie-container">
+<!--           <img src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg"" class="movie-img" alt="Nombre de la película"> -->
+        </div>
+      </div>
+    </article>
   </section>
+
+  <!-- Footer -->
+  <footer class="footer inactive">Hecho con amor Dani PG 2022 &copy </footer>
   <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
   <script src="./src/secrets.js"></script>
+  <script src="./src/nodes.js"></script>
   <script src="./src/main.js"></script>
   <script src="./src/navigation.js"></script>
 </body>
